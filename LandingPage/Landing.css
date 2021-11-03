@@ -1,0 +1,393 @@
+body {
+    overflow-x: hidden;
+    font-family: 'Nunito';
+}
+
+.header {
+    position: relative;
+    height: auto;
+    top: 0px;
+}
+
+.header__Bg {
+    width: 100%;
+}
+
+.logo {
+    top: 20px;
+    left: 15px;
+    position: absolute;
+}
+
+.header__navbar1 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.header__navbar1 a.active {
+    text-decoration: underline;
+}
+
+.header__navbar > li {
+    list-style-type: none;
+    display: inline;
+    
+}
+
+.header__navbar {
+    display: flex;
+}
+
+.header__navbar1  a{
+    color: white;
+    text-decoration: none;
+    padding-top: 25px;
+    padding-left: 20px;
+    font-size: 12px;
+}
+
+.header__navbar2{
+    float: right;
+    padding-left: 40px;
+    padding-right: 50px;
+    
+}
+
+.header__textandbuttons {
+    position: absolute;
+    top: 10vw;
+    width: 40vw;
+    left: 10vw;
+    margin-top: 15vh;
+    color: #fff;
+}
+
+.header__textandbuttons > h2 {
+    font-weight: 600;
+}
+
+.header__buttons {
+    display: flex;
+}
+
+.header__buttons > button {
+    color: #fff;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 10px 35px;
+}
+
+.header__btn1 {
+    border: none;
+    background-image: linear-gradient(to right, #F09819 0%, #EDDE5D  51%, #F09819  100%);
+    margin-right: 15px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    display: block;
+    
+}
+
+.header__btn1:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.header__btn2 {
+    background: transparent;
+    border: 1px solid white;
+}
+
+.services {
+    position: relative;
+    width: 100%;
+}
+
+.services__header {
+    position: absolute;
+    top: -33vh;
+    width: 100vw;
+    text-align: center;
+    color: black;
+}
+
+.services__header > h3 {
+    width: 97vw;
+    font-weight: 600;
+}
+
+
+.services_divider {
+    height: .5vh;
+    width: 8vw;
+    border-radius: 5px;
+    margin: 2vh 45vw;
+    background-color: #e0eef8;
+}
+
+.services__header > p {
+    width: 100vw;
+    font-size: 12px
+}
+
+.services_details{
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 0vh 8.5vw;
+    padding: 20px;
+
+}
+
+@media only screen and (max-width: 1080px) {
+    .services_details{
+        display: inline-grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+}
+
+.services_item {
+    display: flex;
+    width: 350px;
+    height: 230px;
+    border-radius: 30px 5px; 
+    padding: 30px 15px;
+}
+
+.services_item:hover {
+    box-shadow:0 0 11px rgba(33,33,33,.2);
+}
+
+.services_itemBody {
+    margin: 0px 15px;
+}
+
+.services_itemBody > h6 {
+    font-weight: 600;
+    
+}
+
+.services_itemBody > p {
+    margin-top: 10px;
+    font-size: 12px;
+    
+}
+
+.marketing {
+    position: relative;
+    top: -15vh;
+}
+.marketing > img{
+    width: 100%;
+    height: auto;
+}
+
+.marketing__content {
+    position: absolute;
+    color: white;
+    width: 40vw;
+}
+.marketing__content > h3{
+    font-weight: 600;
+}
+
+.marketing__content > p{
+    font-size: calc(2px + 1.7vmin);
+}
+.marketing__content > a{
+    color: white;
+}
+
+.content1 {
+    top: 38vw;
+    right: 5vw;
+}
+
+.content2 {
+    top: 83vw;
+    left: 15vw;
+}
+
+.content3 {
+    bottom: 15vw;
+    right: 5vw;
+    color: black;
+}
+
+.clientsSection {
+    width: 100vw;
+    text-align: center;
+}
+
+.clientsSection__header {
+    bottom: 0vh;
+}
+
+.clientsSection__header > h3{
+    width: 97vw;
+    font-weight: 600;
+}
+.clientsSection__divider {
+    height: .5vh;
+    width: 8vw;
+    border-radius: 5px;
+    margin: 2vh 45vw;
+    background-color: #e0eef8;
+}
+.clientsSection__header > p{
+    font-size: calc(2px + 1.5vmin);
+}
+
+.clientsSection__details {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 0vh 1vw;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .clientsSection__details{
+        display: inline-grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        padding: 20px;
+    }
+}
+
+.client_bg {
+    position: relative;
+    background-image: url(./clientBg.png);
+    width: calc(.8*397px);
+    height: calc(.67*500px);
+    text-align: left;
+    margin-left: 10px;
+}
+.client{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding: calc(.8*47px) ;
+    padding-left: calc(.8*57px);
+    padding-right: calc(.8*57px);
+    border-radius: 90px 0px;
+    background: white;
+    width: calc(.8*397px);
+    height: calc(.8*420px);
+    box-shadow:0 0 11px rgba(33,33,33,.2);
+}
+
+.client > img {
+    width: calc(.8*111px);
+    height: calc(.8*121px);
+}
+
+.client > h6 {
+    margin-top:48px;
+}
+
+.client__logos {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.client__logos > img{
+    display: block;
+    max-width:100px;
+    max-height:50px;
+    width: auto;
+    height: auto;
+    margin-top: 1vw;
+    margin-left: 2vw;
+}
+
+
+.footer {
+    bottom: 0px;
+    position: relative;
+}
+
+.footer__Bg {
+    width: 100%;
+    bottom: 0px;
+}
+
+.footer__container {
+    display: flex;
+    position: absolute;
+    bottom: 10vw;
+    left: 15vw;
+    color: white;
+    font-size: calc(2px + 2vmin);
+}
+
+.footer__emailForm{
+    position: relative;
+    display: flex;
+    height:7vh;
+    border: none;
+    background-color:white;
+    width: 30vw;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.footer__emailForm > input{
+    position: absolute;
+    left: .8vw;
+    bottom: .8vh;
+    top: .8vh;
+    right: 5vw;
+    outline-width: 0;
+    border: none;
+    width: 90%;
+}
+.footer__sendBtn {
+    right: .8vh;
+    bottom: .8vh;
+    top: .8vh;
+    width: 6vw;
+    position: absolute;
+    border: none;
+    background-image: linear-gradient(to right, #F09819 0%, #EDDE5D  51%, #F09819  100%);
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    display: block;
+    
+}
+.footer__sendBtn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+}
+
+.footer > p {
+    width: 100%;
+    text-align: center;
+    position:absolute;
+    bottom: 0px;
+    color: white;
+    font-size: calc(1px + 1.7vmin);
+}
+
+table {
+    margin-left: 12vw;
+}
+
+th, td {
+    width: 12vw;
+    font-size:calc(2px + 1.8vmin);
+}
+
